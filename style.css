@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ortak alan özellikleri */
+body{
+    background-color: #8ffbfb;
+}
+section{
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    font-family: 'Open Sans', sans-serif;
+}
+/* üst paragraf */
+header{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    background: linear-gradient(70deg, rgba(190,226,236,1) 0%, rgba(236,249,255,1) 50%, rgba(233,243,245,1) 100%);
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+header a{
+    cursor: pointer;
+}
+header a:hover{
+    background-color:transparent;
+}
+header a img{
+    width: 100px;
+}
+header nav{
+    display: flex;
+    gap: 20px;
+}
+header nav a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #000000;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgb(86, 85, 85);
+    cursor: pointer;
+    transition: color 0.5s, text-shadow 1s;
+}
+header nav a:hover{
+    color: red;
+    text-shadow: 2px 2px 14px rgb(203, 1, 1);
+    transition: all 0.5s;
+    border-bottom: 2px solid red;
+    border-radius: 10px;
+}
+/* welcome-sec */
+#welcome-sec{
+    background-image:radial-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0, 0.9) 40%), url('images/header-img.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    justify-content: space-evenly;
+    gap: 150px;
+    padding-top: 300px;
+
+}
+.welcome-text{
+    justify-content: space-between;
+    text-align: center;
+}
+.welcome-text h1{
+    width: auto;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px black;
+}
+.welcome-text p{
+    max-width: 800px;
+    margin: 100px auto 50px auto;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    justify-content: end;
+    color: #ffffff;
+    text-shadow: 10px 5px 80px rgb(255, 253, 253);
+}
+/* section2 */
+#sec-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(images/sec1-img.jpg);
+    background-size: cover;
+    gap: 120px;
+    padding: 0 50px;
+}
+.left-side{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 100px;
+    color: #ffffff;
+}
+.left-side h1{
+    font-size: 60px;
+    line-height: 50px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid wheat;
+}
+.left-side p{
+    margin-top: 20px;
+    justify-self: start;
+    font-size: 25px;
+
+}
+.left-side p span{
+    border-bottom: 3px solid crimson;
+}
+.question{
+    display: flex;
+    margin-top: 30px;
+    font-size: 20px;
+    justify-self: start;
+    align-self: start;
+}
+.right-side{
+    max-width: 500px;
+    max-height: 600px;
+}
+.right-side img{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    margin-top: auto;
+    padding-top: 100px;
+    border-radius: 20px;
+}
+/* section 2 */
+#sec-2 {
+    background-image:radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0, 0.9) 50%), url('images/sec3.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-top: 90px;
+}
+.heading{
+    text-align: center;
+    word-wrap:break-word ;
+    gap: 30px;
+    padding: 0 25px;
+}
+.heading h5{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.heading h1{
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.boxes{
+    width: 620px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box{
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    border-color: aqua;
+    background-image:radial-gradient(circle, rgba(255, 241, 241, 0) 0%, rgba(247, 242, 242, 0.9) 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+
+}
+.box:last-child{
+    width: 610px;
+}
+.box h2{
+    font-size: 20px;
+}
+.box p{
+    font-size: 16px;
+}
+
+/* section3 */
+#sec-3 {
+    width: 100%;
+    background-image:linear-gradient(250deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0, 0.9) 50%), url(images/sec4.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+#sec-3 .left{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0px 20px;
+    padding: 0 30px;
+}
+#sec-3 .left h3{
+    font-size: 20px;
+    color: #ffffff;
+
+}
+#sec-3 .left h1{
+    font-size: 36px;
+    color: #ffffff;
+}
+#sec-3 .left p{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    color: #ffffff;
+}
+#sec-3 .left button{
+    background-color: aqua;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: black;
+    margin-top: 50px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.5s, color 1s;
+}
+#sec-3 .left button:hover{
+    background-color: bisque;
+    color: black;
+    transition: all 0.7s;
+}
+#sec-3 .right {
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 20px;
+    align-items: end;
+}
+  
+.card {
+    width: 450px;
+    height: 180px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+    gap: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s, color 1s;
+}
+.card:hover{
+    background-color: bisque;
+    color: black;
+    transition: all 0.7s;
+}
+.card:nth-child(2) {
+    align-self: flex-start;
+}
+  
+.person-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.person-info img{
+    width: 50px;
+    border-radius: 50px;
+}
+.info-detail h1 {
+    color: crimson;
+  }
+small {
+    color: gray;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* 820px altına indiğinde */
+@media(min-width: 1280px){
+    #sec-1{
+        display: flex;
+        width: 100%;
+    }
+    .left-side{
+        max-width: 300px;
+        gap: 10px;
+        padding-top:150px;
+    }
+    .right-side{
+        max-width: 400px;
+        max-height: 500px;
+
+    }
+    .question p{
+        font-size: 11px;
+    }
+    .left-side h1{
+        font-size: 14px;
+        color: #000000;
+    }
+}
+
+/* 768px altına indiğinde */
+@media(max-width:768px){
+    #welcome-sec{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .welcome-text h1{
+        font-size: 30px;
+    }
+    .welcome-text p{
+        font-size: 20px;
+    }
+    #sec-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .left-side{
+        width: 700px;
+        gap: 10px;
+    }
+    .question{
+       align-self: center;
+    }
+    .left-side h1{
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    }
+    .left-side p{
+        font-size: 16px;
+        text-align: center;
+        padding-top: 20px;
+        margin-top: 0;
+    }
+    .right-side{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        gap: 20px;
+    }
+    .right-side img{
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+        order: -1;
+        border-radius: 10px;
+    }
+    #sec-2{
+        width: 100%;
+        gap: 20px;
+        padding-top: 100px;
+    }
+    .heading h1{
+        font-size: 26px;
+    }
+    .boxes{
+        width: 620px;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .box{
+        width: 45%;
+        height: 100px;
+    }
+    .box:last-child{
+        width: 90%;
+    }
+    .box h2{
+        font-size: 16px;
+    }
+    .box p{
+        font-size: 12px;
+    }
+    #sec-3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 120px;
+    }
+    #sec-3 .left{
+        width: 100%;
+        gap: 0;
+    }
+    #sec-3 .left h3{
+        font-size: 16px;
+        gap: 10px;
+    
+    }    
+    #sec-3 .left h1{
+        font-size: 20px;
+    }
+    #sec-3 .left p{
+        width: 100%;
+        font-size: 14px;
+        margin-top: 15px 0;
+        padding: 0 0;
+    }
+    #sec-3 .left button{
+        margin: 10px 0;
+    }
+    #sec-3 .right{
+        display:flex;
+        align-self: self-start;
+        width: 100%;
+        padding-top: 0;
+        gap: 20px;
+    }
+    .card{
+        width: 100%;
+        display: inline-block;
+        align-self: center;
+        justify-content: center;
+        width: 500px;
+        max-height: 100px;
+        margin: 0 40px;
+        gap: 20px;
+        padding: 10 10px;
+
+    }
+    .person-info{
+        gap: 0;
+        display: flex;
+        align-items: center;
+
+    }
+    .person-info img{
+        width: 40px;
+        gap: 10px;
+        margin: 0 10px;
+    }
+    .card:nth-child(2){
+        align-self: self-end;
+
+    }
+    .info-detail{
+        display: flex;
+        gap: 30px;
+        padding: 0;
+        margin: 0;
+    }
+    .info-detail h1{
+        font-size: 16px;
+    }
+    .right small{
+        font-size: 12px;
+
+    
+    }
+    .card p{
+        font-size: 12px;
+
+        font-weight: 400;
+
+    }
+}
